@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greeting App</title>
+</head>
+<body>
+
+    <h1>👋 Welcome to the Greeting App</h1>
+
+    <!-- Input box for name -->
+    <input type="text" id="nameInput" placeholder="Enter your name">
+
+    <!-- Button -->
+    <button onclick="sayHello()" ">
+        Greet Me
+    </button>
+
+    <!-- Message display -->
+    <p id="greeting" ></p>
+
+    <script>
+        function sayHello() {
+            // Get the name from the input box
+            let name = document.getElementById("nameInput").value;
+
+            // If the input is empty
+            if(name.trim() === "") {
+                document.getElementById("greeting").innerHTML = "⚠️ Please enter your name!";
+                document.getElementById("greeting").style.color = "red";
+            } else {
+                // Show the greeting
+                document.getElementById("greeting").innerHTML = "Hello, " + name + "! 🎉";
+                document.getElementById("greeting").style.color = "blue";
+            }
+        }
+    </script>
+
+</body>
+</html>

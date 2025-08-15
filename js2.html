@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fun with HTML & JavaScript</title>
+</head>
+<body>
+
+    <!-- Heading -->
+    <h1>JavaScript Fun Demo</h1>
+
+    <!-- Paragraph -->
+    <p id="message">
+        Click the button to see magic!
+    </p>
+
+    <!-- Button -->
+    <button onclick="changeStyle()">
+        Click Me!
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        function changeStyle() {
+            // Get the paragraph
+            let text = document.getElementById("message");
+
+            // Change the text
+            text.innerHTML = "✨ Wow! You changed me! ✨";
+
+            // Change text color
+            text.style.color = "red";
+
+            // Change font size
+            text.style.fontSize = "30px";
+
+            // Change background color of the whole page
+            document.body.style.backgroundColor = "lightyellow";
+        }
+    </script>
+
+</body>
+</html>
+
+
+
